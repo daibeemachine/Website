@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+@use "sass:color";
+
+* { font-size: 12pt;}
+.title
+{
+  text-align: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  align-items: center;
+  display: flex;
+}
+
+.hello
+{
+}
+
+.kinshi
+{
+  font-size: 45pt;
+  color: red;
+  text-align: center;
+}
+
+.bigbee
+{
+  height: 300px;
+  width: 300px;
+  vertical-align: middle;
+  float: right;
+}
