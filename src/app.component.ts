@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from "./app/home/home.component";
+import { HomeComponent } from "./home/home.component";
 
 @Component({
   standalone: true,
