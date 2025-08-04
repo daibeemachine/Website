@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import {HomeComponent} from './home/home.component';
+import { BeesComponent } from './app/bees/bees.component';
 
 
 export const routeConfig: Routes =
@@ -11,7 +12,7 @@ export const routeConfig: Routes =
   },
   {
     path: 'bees',
-    component: HomeComponent,
+    component: BeesComponent,
     title: 'Home page'
   }
 ];
