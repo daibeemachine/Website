@@ -1,6 +1,16 @@
+$icon_size: 200px;
+
 .pages
 {
-  display: flex;
+  display: grid;
+  grid-template-rows: $icon_size $icon_size;
+  grid-template-columns: $icon_size $icon_size;
   font-size: 20px;
-  gap: 20px;
+}
+
+.pages img
+{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
