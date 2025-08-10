@@ -3,4 +3,8 @@
 @use "sass:color";
 @use './app.component.scss';
 @use './app/navigation-bar/navigation-bar.component.scss';
+@import '@angular/cdk/overlay-prebuilt.css';
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
