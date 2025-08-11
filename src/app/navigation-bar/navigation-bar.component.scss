@@ -1,22 +1,54 @@
 $icon_size: 200px;
-
+@keyframes pulse
+{
+  0% { outline-color: lightcoral; }
+  50% { outline-color: gray; }
+  100% { outline-color: lightcoral; }
+}
 .pages
 {
   display: grid;
   grid-template-rows: $icon_size;
   grid-template-columns: $icon_size;
   font-size: 20px;
-
-
 }
 
-.pages img
+.menu::before
+{
+  content:"";
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
+  outline: 0px solid lightcoral;
+  transition: all 100ms ease-in-out;
+}
+.menu img
 {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  border-bottom-right-radius: 40px;
+}
+.menu
+{
   outline-style: solid;
   outline-width: 6px;
   outline-color: rgb(128, 102, 0);
+  transition: all 100ms ease-in-out;
+  transition-delay: 100ms;
+}
+.menu:hover
+{
+  transform: scale(1.05) translateX(2.5%) translateY(2.5%);
+  outline-width: 16px;
+  transition: all 100ms ease-in-out;
+}
+
+.menu:hover::before
+{
+  outline-width: 12px;
+  transition-delay: 100ms;
+  animation-delay: 200ms;
+  animation: pulse 2s infinite;
 }
