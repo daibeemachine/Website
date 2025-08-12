@@ -1,4 +1,5 @@
 $icon_size: 200px;
+$filler_amount: 3;
 @keyframes pulse
 {
   0% { outline-color: lightcoral; }
@@ -38,6 +39,7 @@ a.menu::before
   outline-color: rgb(128, 102, 0);
   transition: all 100ms ease-in-out;
   transition-delay: 100ms;
+  cursor: pointer;
 }
 .menu:hover
 {
@@ -53,10 +55,29 @@ a.menu:hover::before
   animation-delay: 200ms;
   animation: pulse 2s infinite;
 }
+
 a.menu:active::before
 {
   transition: all 100ms;
   outline-width: 16px;
   outline-color: lightgray;
   animation: none;
+}
+
+.filler
+{
+  grid-column: span $filler_amount;
+}
+
+.close
+{
+  transition: transform 200ms ease-out;
+  transform: translateY(0%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.disabled_menu
+{
+  transition: all 300ms;
 }
