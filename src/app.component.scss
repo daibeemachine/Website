@@ -1,5 +1,10 @@
-// App Component SCSS Properties!!! :D
 
+:root
+{
+  --bee_size: clamp(150px, 30vw, 300px);
+  --hello_font_size: clamp(1rem, min(2vh, 2vw), 3rem);
+  --kinshi_font_size: clamp(3rem, min(5vh, 5vw), 5rem);
+}
 // Default Homepage SCSS Properties!!!
 
 .beespeech
@@ -23,104 +28,20 @@
 
   .hello
   {
-    font-size: 12pt;
+    font-size: var(--hello_font_size);
     float: right;
   }
 
   //Kinshi (禁止) means "stop" in Japanese
   .kinshi
   {
-    font-size: 20pt;
+    font-size: var(--kinshi_font_size);
     color: red;
     text-align: center;
   }
 
   .bigbee
   {
-    height: 60%;
-    width: 60%;
+    height: auto;
+    width: var(--bee_size);
   }
-
-// Responsive Design SCSS Properties!!!
-
-@media (max-width: 600px) {
-  .title
-  {
-  }
-
-  .hello
-  {
-  }
-
-  .kinshi
-  {
-    color: red;
-  }
-
-  .bigbee
-  {
-  }
-}
-@media (min-width: 600px) and (max-width:768px) {
-  .title
-  {
-  }
-
-  .hello
-  {
-    font-size: 16pt;
-  }
-
-  .kinshi
-  {
-    font-size: 30pt;
-  }
-
-  .bigbee
-  {
-    height: 65%;
-    width: 65%;
-  }
-}
-@media (min-width: 769px) and (max-width:1279px) {
-  .title
-  {
-  }
-
-  .hello
-  {
-    font-size: 16pt;
-  }
-
-  .kinshi
-  {
-    font-size: 35pt;
-  }
-
-  .bigbee
-  {
-    height: 60%;
-    width: 60%;
-  }
-}
-@media (min-width:1280px) {
-  .title
-  {
-  }
-
-  .hello
-  {
-    font-size: 16pt;
-  }
-
-  .kinshi
-  {
-    font-size: 45pt;
-  }
-
-  .bigbee
-  {
-    height: 400px;
-    width: 400px;
-  }
-}
