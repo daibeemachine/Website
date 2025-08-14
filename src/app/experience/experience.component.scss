@@ -1,0 +1,6 @@
+.kinshi_experience
+{
+  --kinshi_experience_font_size: clamp(2rem, min(5vh, 5vw), 5rem);
+  color: red;
+  font-size: var(--kinshi_experience_font_size);
+}

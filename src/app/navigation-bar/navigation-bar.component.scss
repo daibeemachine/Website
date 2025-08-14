@@ -18,7 +18,7 @@ $menu_outline_width: 6;
 $filler_amount: 3;
 $menu_icon_shadowbox: 0px calc(var(--icon_size, 200px)*(1/8)) 0px gray;
 $menu_icon_shadowbox_hover: 0px calc(var(--icon_size, 200px)*(3/16)) 0px;
-$menu_icon_shadowbox_active: 0px calc(var(--icon_size, 200px)*(7/32)) 0px lightgray;
+$menu_icon_shadowbox_active: 0px calc(var(--icon_size, 200px)*(7/32)) 0px;
 $menu_icon_transition: box-shadow 200ms;
 $icon_border: 0px 100px 0px rgb(128, 102, 0);
 @keyframes pulse
@@ -115,7 +115,7 @@ a.menu:active::before
 
 .close_opened:active
 {
-  box-shadow: $menu_icon_shadowbox_active;
+  box-shadow: $menu_icon_shadowbox_active rgb(246, 182, 182);
 }
 
 .disabled_menu
@@ -131,36 +131,41 @@ a.menu:active::before
 }
 .home:hover
 {
-  box-shadow: 0px calc(var(--icon_size, 200px)*(3/16)) 0px lightcoral;
+  box-shadow: 0px calc(var(--icon_size, 200px)*(3/16)) 0px lightskyblue;
   transition: box-shadow 200ms;
 }
 
-
 .home:active
 {
-  box-shadow: $menu_icon_shadowbox_active;
+  box-shadow: $menu_icon_shadowbox_active rgb(177, 223, 252);
+  transition: $menu_icon_transition;
+}
+
+.experience
+{
+  box-shadow: $menu_icon_shadowbox;
+  transition: $menu_icon_transition;
+}
+.experience:hover
+{
+  box-shadow: 0px calc(var(--icon_size, 200px)*(3/16)) 0px lightgreen;
+  transition: box-shadow 200ms;
+}
+
+.experience:active
+{
+  box-shadow: $menu_icon_shadowbox_active rgb(184, 244, 184);
   transition: $menu_icon_transition;
 }
 
 
-//These are just some placeholders for the second and third buttons on the navigation bar.
-//I'll provide them some purpose later.
+//These are just some placeholders for the third button on the navigation bar.
+//I'll provide it some purpose later.
 .placeholder
 {
   box-shadow: $menu_icon_shadowbox;
   cursor: not-allowed;
   transition: $menu_icon_transition;
-}
-.placeholder:hover
-{
-  box-shadow: $menu_icon_shadowbox_hover lightsalmon;
-}
-
-.placeholder::after
-{
-
-  box-shadow: $menu_icon_shadowbox_hover red;
-  z-index: 3;
 }
 
 //Responsive Design SCSS stuff
