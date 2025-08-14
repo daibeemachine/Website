@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
-
+  constructor()
+  {
+    const icon = document.getElementById("siteicon");
+    icon?.setAttribute("href", "images/ExperienceIcon.png");
+  }
 }
