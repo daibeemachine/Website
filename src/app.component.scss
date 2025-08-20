@@ -1,17 +1,47 @@
-.title
-{
-  width: 50%;
-  text-align: center;
-  float: left;
-}
 
-.kinshi
+:root
 {
-  font-size: xx-large;
-  color: red;
+  --bee_size: clamp(150px, 30vw, 300px);
+  --hello_font_size: clamp(1rem, min(2vh, 2vw), 3rem);
+  --kinshi_font_size: clamp(3rem, min(5vh, 5vw), 5rem);
 }
-.bigbee
+// Default Homepage SCSS Properties!!!
+
+.beespeech
 {
-  width: 50%;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
 }
+.title
+  {
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+
+  .hello
+  {
+    font-size: var(--hello_font_size);
+    float: right;
+  }
+
+  //Kinshi (禁止) means "stop" in Japanese
+  .kinshi
+  {
+    font-size: var(--kinshi_font_size);
+    color: red;
+    text-align: center;
+  }
+
+  .bigbee
+  {
+    height: auto;
+    width: var(--bee_size);
+  }

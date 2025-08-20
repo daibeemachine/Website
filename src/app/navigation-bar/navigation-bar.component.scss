@@ -1,0 +1,172 @@
+
+/*
+These are the values that can get adjusted for supporting multiple screen sizes.
+The ratio I use for icon_size:menu_outline_width is 75:3.
+*/
+
+:root
+{
+  --icon_size: clamp(0px, 25vw, 20vh);
+  --menu_outline_width: clamp(0px, 25vw, 6px);
+}
+
+$icon_size: 200px;
+$menu_outline_width: 6;
+
+
+
+$filler_amount: 3;
+$menu_icon_shadowbox: 0px calc(var(--icon_size, 200px)*(1/8)) 0px gray;
+$menu_icon_shadowbox_hover: 0px calc(var(--icon_size, 200px)*(3/16)) 0px;
+$menu_icon_shadowbox_active: 0px calc(var(--icon_size, 200px)*(7/32)) 0px;
+$menu_icon_transition: box-shadow 200ms;
+$icon_border: 0px 100px 0px rgb(128, 102, 0);
+@keyframes pulse
+{
+  0% { outline-color: lightcoral; }
+  50% { outline-color: gray; }
+  100% { outline-color: lightcoral; }
+}
+.pages
+{
+  display: grid;
+  grid-template-rows: repeat(2, var(--icon_size, 200px));
+  grid-template-columns: repeat(4, var(--icon_size, 200px));
+}
+
+.pages img
+{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a.menu::before
+{
+  content:"";
+  position: absolute;
+  top: calc(var(--menu_outline_width, 200px)*(-2));
+  bottom: calc(var(--menu_outline_width, 200px)*(-2));
+  left: calc(var(--menu_outline_width, 200px)*(-2));
+  right: calc(var(--menu_outline_width, 200px)*(-2));
+  outline: 0px solid lightcoral;
+  transition: all 100ms ease-in-out;
+}
+
+.menu
+{
+  outline-style: solid;
+  outline-width: calc(var(--menu_outline_width, 200));
+  outline-color: rgb(128, 102, 0);
+  transition: all 100ms ease-in-out;
+  transition-delay: 100ms;
+  cursor: pointer;
+}
+.menu:hover
+{
+  transform: scale(1.05) translateX(2.5%) translateY(2.5%);
+  outline-width: calc(var(--menu_outline_width, 200px)*2.66);
+  transition: all 100ms ease-in-out;
+}
+
+a.menu:hover::before
+{
+  outline-width: calc(var(--menu_outline_width, 200px)*2.66);
+  transition-delay: 100ms;
+  animation-delay: 200ms;
+  animation: pulse 2s infinite;
+}
+
+a.menu:active::before
+{
+  transition: all 100ms;
+  outline-width: calc(var(--menu_outline_width, 200px)*3);
+  outline-color: lightgray;
+  animation: none;
+}
+
+.filler
+{
+  grid-column: span $filler_amount;
+}
+
+.close
+{
+  transition: all 200ms ease-out;
+  transform: translateY(0%);
+  z-index: 2;
+}
+
+.close_opened
+{
+  transform: translateY(100%);
+  transition: all 200ms;
+  box-shadow: $menu_icon_shadowbox;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close_opened:hover
+{
+  box-shadow: $menu_icon_shadowbox_hover lightcoral;
+  transition: all 200ms;
+  z-index: -1;
+}
+
+.close_opened:active
+{
+  box-shadow: $menu_icon_shadowbox_active rgb(246, 182, 182);
+}
+
+.disabled_menu
+{
+  transition: all 300ms;
+  z-index: -2;
+}
+
+.home
+{
+  box-shadow: $menu_icon_shadowbox;
+  transition: $menu_icon_transition;
+}
+.home:hover
+{
+  box-shadow: 0px calc(var(--icon_size, 200px)*(3/16)) 0px lightskyblue;
+  transition: box-shadow 200ms;
+}
+
+.home:active
+{
+  box-shadow: $menu_icon_shadowbox_active rgb(177, 223, 252);
+  transition: $menu_icon_transition;
+}
+
+.experience
+{
+  box-shadow: $menu_icon_shadowbox;
+  transition: $menu_icon_transition;
+}
+.experience:hover
+{
+  box-shadow: 0px calc(var(--icon_size, 200px)*(3/16)) 0px lightgreen;
+  transition: box-shadow 200ms;
+}
+
+.experience:active
+{
+  box-shadow: $menu_icon_shadowbox_active rgb(184, 244, 184);
+  transition: $menu_icon_transition;
+}
+
+
+//These are just some placeholders for the third button on the navigation bar.
+//I'll provide it some purpose later.
+.placeholder
+{
+  box-shadow: $menu_icon_shadowbox;
+  cursor: not-allowed;
+  transition: $menu_icon_transition;
+}
+
+//Responsive Design SCSS stuff
+
