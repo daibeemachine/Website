@@ -7,7 +7,8 @@ The ratio I use for icon_size:menu_outline_width is 75:3.
 :root
 {
   --icon_size: clamp(0px, 25vw, 20vh);
-  --menu_outline_width: clamp(0px, 25vw, 6px);
+  --menu_outline_width: clamp(0px, min(0.8vw, 0.8vh), 12px);
+  --menu_outline_pulse_width: clamp(0px, 25vw,)
 }
 
 $icon_size: 200px;
