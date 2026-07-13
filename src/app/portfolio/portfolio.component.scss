@@ -1,16 +1,21 @@
-.daibee
-{
+.daibee {
   width: 20vh;
   height: 20vh;
 }
-.card
-{
+
+.card_grid {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh;
+  gap: 1em;
+  justify-content: center;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   border: 5px solid black;
   background-color: lightgray;
-  width: 20vh;
-  height: 20vh;
   justify-content: top;
   align-items: center;
 }
