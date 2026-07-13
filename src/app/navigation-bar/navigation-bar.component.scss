@@ -169,4 +169,29 @@ a.menu:active::before
 }
 
 //Responsive Design SCSS stuff
+.navigation_bar
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+}
 
+.navigation_bar a
+{
+  padding-left: clamp(0px, 5vw, 20px);
+  padding-right: clamp(0px, 5vw, 20px);
+  font-size: clamp(16pt, 3vw, 32pt);
+  color: gray
+}
+
+.navigation_bar a:focus
+{
+  color: red
+}
+
+.navigation_bar a:hover
+{
+  color: red
+}

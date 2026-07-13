@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "type": "module",
   "private": true,
   "dependencies": {
     "@angular/cdk": "^19.2.19",
@@ -21,6 +22,7 @@
     "@angular/router": "^19.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vscode-css-languageservice": "^6.3.10",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {

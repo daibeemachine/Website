@@ -1,0 +1,22 @@
+{
+  "info":[
+    {
+      "id": 1,
+      "title": "Website",
+      "description": "Source code for my website",
+      "link": "link goes here"
+    },
+    {
+      "id": 2,
+      "title": "GameJam2026",
+      "description": "Source code for a game I and a friend made during a game jam at UMM in 2026 using pico8",
+      "link": "link goes here"
+    },
+    {
+      "id": 3,
+      "title": "Resume",
+      "description": "Source code for my resume",
+      "link": "link goes here"
+    }
+  ]
+}
