@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import data from '../../portfolio_items.json'
-
-
+import { Component} from '@angular/core';
+import {ScrollingModule} from '@angular/cdk/scrolling'
+import {MatGridListModule} from '@angular/material/grid-list'
+import data from '../../portfolio_items.json';
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [ScrollingModule, MatGridListModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

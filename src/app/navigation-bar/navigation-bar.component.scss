@@ -27,6 +27,7 @@ $icon_border: 0px 100px 0px rgb(128, 102, 0);
   50% { outline-color: gray; }
   100% { outline-color: lightcoral; }
 }
+
 .pages
 {
   display: grid;
@@ -178,11 +179,10 @@ a.menu:active::before
   height: 10vh;
 }
 
-.navigation_bar a
-{
-  padding-left: clamp(0px, 5vw, 20px);
-  padding-right: clamp(0px, 5vw, 20px);
-  font-size: clamp(16pt, 3vw, 32pt);
+.navigation_bar a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 3rem;
   color: gray
 }
 
@@ -194,4 +194,11 @@ a.menu:active::before
 .navigation_bar a:hover
 {
   color: red
+}
+
+@media (max-width: 34rem) {
+  .navigation_bar a {
+    padding: 0rem 1rem;
+    font-size: 1.75rem;
+  }
 }
