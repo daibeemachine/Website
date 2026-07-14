@@ -8,6 +8,7 @@ The ratio I use for icon_size:menu_outline_width is 75:3.
 {
   --icon_size: clamp(0px, 25vw, 20vh);
   --menu_outline_width: clamp(0px, 25vw, 6px);
+  font-size: 16px;
 }
 
 $icon_size: 200px;
@@ -176,13 +177,13 @@ a.menu:active::before
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 10vh;
+  height: 3rem;
 }
 
 .navigation_bar a {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
   color: gray
 }
 
@@ -196,9 +197,15 @@ a.menu:active::before
   color: red
 }
 
-@media (max-width: 34rem) {
-  .navigation_bar a {
-    padding: 0rem 1rem;
-    font-size: 1.75rem;
+@media (min-width: 34rem) {
+  :root {
+    font-size: 20px;
   }
 }
+
+@media (min-width: 68rem) {
+  :root {
+    font-size: 40px;
+  }
+}
+

@@ -4,23 +4,12 @@
 
 :host {
   --fs-xl: 3rem;
-  --fs-600: 1.75rem;
-  --fs-500: 1.5rem;
-  --fs-400: 1.25rem;
-  --card-width: 15rem;
-  --card-height: 15rem;
+  --fs-600: 0.9rem;
+  --fs-500: 0.7rem;
+  --fs-400: 0.5rem;
+  --card-width: 8rem;
+  --card-height: 8rem;
 }
-@media (min-width: 25rem) {
-  :host {
-    --card-width: 20rem;
-    --card-height: 20rem;
-    --fs-xl: 5rem;
-    --fs-600: 2.225rem;
-    --fs-500: 2rem;
-    --fs-400: 1.75rem;
-  }
-}
-
 
 *,
 *::before,
@@ -29,8 +18,8 @@
 }
 
 .daibee {
-  width: 20vh;
-  height: 20vh;
+  width: 7rem;
+  height: 7rem;
   padding: 2rem;
 }
 
@@ -38,6 +27,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.75rem;
+  margin: 0rem rem;
 }
 
 .card {
@@ -46,10 +37,10 @@
   flex-direction: column;
   background-color: lightgray;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   height: var(--card-width);
   width: var(--card-width);
-  overflow: scroll;
+  overflow: auto;
 
 }
 .card_title {
@@ -58,4 +49,16 @@
 }
 .card_description {
   font-size:var(--fs-400);
+}
+
+@media (min-width: 34rem) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 68rem) {
+  :root {
+    font-size: 40px;
+  }
 }
