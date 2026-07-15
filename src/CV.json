@@ -1,0 +1,21 @@
+{
+  "sections":[
+    {
+      "id":1,
+      "title":"Education",
+      "subsections":[
+        {
+          "id":1,
+          "title":"Master of Science (M.S.), University of Minnesota Duluth",
+          "date":"Aug 2026 - May 2028",
+          "items":[
+              {
+                "id":1,
+                "info":"Major: Computer Science"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
