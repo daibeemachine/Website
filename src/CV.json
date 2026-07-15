@@ -14,6 +14,157 @@
                 "info":"Major: Computer Science"
               }
           ]
+        },
+        {
+          "id":2,
+          "title":"Bachelor of Arts (B.A.), University of Minnesota Morris",
+          "date":"Aug 2024 - May 2026",
+          "items":[
+              {
+                "id":1,
+                "info":"Major: Computer Science, Psychology"
+              },
+              {
+                "id":2,
+                "info":"GPA: 3.836"
+              }
+          ]
+        }
+      ]
+    },
+    {
+      "id":2,
+      "title":"Leadership",
+      "subsections":[
+        {
+          "id":1,
+          "title":"Computer Science Student Representative",
+          "date":"May 2025 - May 2026",
+          "items":[
+              {
+                "id":1,
+                "info":"Collaborated with the University of Minnesota Morris Computer Science discipline to manage events and logistics"
+              },
+              {
+                "id":2,
+                "info":"Served as a representative for students of the Computer Science discipline, advocating for discipline and division-wide policy that best supports students' learning and well-being"
+              },
+              {
+                "id":3,
+                "info":"Assisted in the evaluation of transfer courses"
+              }
+          ]
+        },
+        {
+          "id":2,
+          "title":"Telling the CSCI Story",
+          "date":"February 2025 - December 2026",
+          "items":[
+            {
+              "id":1,
+              "info":"Co-led an interdisciplinary Computer Science and Communications project documenting reflections from Computer Science alumni during and after their time at the University of Minnesota Morris"
+            },
+            {
+              "id":2,
+              "info":"Compiled 1-5 minute-long interviews with Adobe Premiere Pro, correcting lighting, color contrast, and volume"
+            },
+            {
+              "id":3,
+              "info":"Eliminated background noise from raw interview footage using Audacity"
+            },
+            {
+              "id":4,
+              "info":"Designed fluid animations and video elements with Adobe After Effects"
+            },
+            {
+              "id":5,
+              "info":"Organized a student-led discussion of the themes and topics discussed within alumni interviews"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id":3,
+      "title":"Projects",
+      "subsections":[
+        {
+          "id":1,
+          "title":"Web-Based Social Card Game Simulator",
+          "date":"Jan 2025 - May 2025",
+          "items":[
+              {
+                "id":1,
+                "info":"Employed an Agile development format, developing workable iterations of a piece of software in three two-week sprints tailored to a customer's specifications"
+              },
+              {
+                "id":2,
+                "info":"Built a full-stack web-based application, incorporating Angular.js and Typescript for front-end development and a combination of MongoDB and Java for back-end database management"
+              },
+              {
+                "id":3,
+                "info":"Collaborated with teams of 4-7 people, coordinating GitHub repository management, managing communication over email and Discord, and balancing schedules to produce a quality, user-friendly piece of software"
+              }
+          ]
+        },
+        {
+          "id":2,
+          "title":"Voice Recognition with TinyML",
+          "date":"Jan 2025 - May 2025",
+          "items":[
+              {
+                "id":1,
+                "info":"Used Tensorflow Lite and Google Colab to train and deploy a speech-recognition neural network on Harvard edX's TinyML development board "
+              },
+              {
+                "id":2,
+                "info":"Trained speech-recognition neural network on custom voice lines to recognize specific phrases"
+              }
+          ]
+        }
+      ]
+    },
+    {
+      "id":4,
+      "title":"Work Experience",
+      "subsections":[
+        {
+          "id":1,
+          "title":"Software Design and Development Teaching Assistantship",
+          "date":"January 2026 - May 2026",
+          "items":[
+              {
+                "id":1,
+                "info":"Updated lab assignments, managed GitHub repositories, assisted in upgrading dependencies, and ensured proper upkeep of class material"
+              },
+              {
+                "id":2,
+                "info":"Assisted in grading of written and lab assignments"
+              },
+              {
+                "id":3,
+                "info":"Aided students during lab sessions, supporting students in debugging code and progressing through lab assignments"
+              }
+          ]
+        },
+        {
+          "id":2,
+          "title":"Jimmy John's",
+          "date":"Jun 2022 - Jul 2024",
+          "items":[
+              {
+                "id":1,
+                "info":"Ran 3-6 person, 8-hour shifts, ensuring timely and satisfactory customer experience within a fast-paced work environment"
+              },
+              {
+                "id":1,
+                "info":"Resolved customer complaints, balanced employee availability, and delegated tasks under strict time constraints"
+              },
+              {
+                "id":1,
+                "info":"Assisted in managing store inventory and employees' schedules"
+              }
+          ]
         }
       ]
     }
