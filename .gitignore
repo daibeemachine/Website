@@ -44,3 +44,8 @@ Thumbs.db
 # Docs
 /docs
 
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
