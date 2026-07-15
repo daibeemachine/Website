@@ -1,19 +1,45 @@
 <div class="CV">
   <div class="CV__body">
-
-    <h1 class="body__title">Anton Olson</h1>
-
-    <div class="sections">
+    <div class="body__sections">
+      <h1 class="body__title">Anton Olson</h1>
+      <div class="contact">
+        <div class="contact__info">
+          <fa-icon [icon]="phoneIcon"></fa-icon>
+          <i>In PDF mode</i>
+        </div>
+        <div class="contact__divider"></div>
+        <div class="contact__info">
+          <fa-icon [icon]="envelopeIcon"></fa-icon>
+          <p>daibeemachine@gmail.com</p>
+        </div>
+        <div class="contact__divider"></div>
+        <div class="contact__info">
+          <fa-icon [icon]="linkedinIcon"></fa-icon>
+          <p>antonaolson</p>
+        </div>
+        <div class="contact__divider"></div>
+        <div class="contact__info">
+          <fa-icon [icon]="githubIcon"></fa-icon>
+          <p>daibeemachine</p>
+        </div>
+      </div>
       @for(section of sections; track section.id) {
-      <h2>{{section.title}}</h2>
-        @for(subsection of section.subsections; track subsection.id) {
-        <h3>{{subsection.title}}</h3>
-        <h4>{{subsection.date}}</h4>
-            @for(item of subsection.items; track item.id){
-            <li>{{item.info}}</li>
+      <div class="section">
+        <h2>{{section.title}}</h2>
+          @for(subsection of section.subsections; track subsection.id) {
+          <div class="subsection">
+            <h3>{{subsection.title}}</h3>
+            <h4>{{subsection.date}}</h4>
+            <ul >
+                @for(item of subsection.items; track item.id) {
+                <li class="subsection__item">{{item.info}}</li>
+                }
+            </ul>
+          </div>
             }
-          }
-        }
+      </div>
+      }
+      <div class=""></div>
     </div>
 
   </div>

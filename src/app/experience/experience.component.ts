@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import CV from '../../CV.json';
 
 @Component({
@@ -11,6 +13,12 @@ import CV from '../../CV.json';
 })
 export class ExperienceComponent {
   sections = CV.sections;
+
+  envelopeIcon = faEnvelope;
+  githubIcon = faGithub;
+  linkedinIcon = faLinkedin;
+  phoneIcon = faPhone;
+
   constructor()
   {
     const icon = document.getElementById("siteicon");
