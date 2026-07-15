@@ -8,3 +8,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  font-size: 16px;
+}
+
+@media (min-width: 34rem) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 68rem) {
+  :root {
+    font-size: 40px;
+  }
+}
+
