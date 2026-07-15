@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { PdfViewerModule } from 'ng2-pdf-viewer'
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-experience',
-  imports: [PdfViewerModule],
+  imports: [PdfViewerModule, FontAwesomeModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })
