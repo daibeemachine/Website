@@ -4,3 +4,23 @@
   color: red;
   font-size: var(--kinshi_experience_font_size);
 }
+
+.CV {
+  display: flex;
+  justify-content: center;
+
+}
+
+.CV__bar {
+  background-color: rgb(255, 255, 174);
+  height: 95vh;
+  max-height: 100%;
+  width: 10vw;
+}
+
+.CV__body {
+
+}
+.body__title {
+
+}

@@ -21,6 +21,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @media (min-width: 68rem) {
   :root {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 102rem) {
+  :root {
     font-size: 40px;
   }
 }

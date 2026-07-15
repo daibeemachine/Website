@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import CV from '../../CV.json';
 
 @Component({
   selector: 'app-experience',
@@ -9,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
+  sections = CV.sections;
   constructor()
   {
     const icon = document.getElementById("siteicon");
