@@ -1,6 +1,75 @@
-.kinshi_experience
-{
-  --kinshi_experience_font_size: clamp(2rem, min(5vh, 5vw), 5rem);
-  color: red;
-  font-size: var(--kinshi_experience_font_size);
+.CV {
+  display: flex;
+
 }
+
+.CV__body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.CV__bar {
+  background-color: rgb(255, 255, 174);
+  height: 100%;
+  width: var(--space-3xl);
+}
+
+.body__sections {
+  margin: 0rem var(--space-2xl);
+}
+.body__title {
+  text-align: center;
+
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+
+}
+
+.contact__info {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__info fa-icon {
+  font-size: var(--step-1);
+  margin: 0rem var(--space-m);
+  color: black;
+}
+
+.contact__info--phone {
+  cursor: not-allowed;
+}
+
+
+.section {
+  margin: var(--space-3xl) 0rem;
+
+}
+
+
+.subsection {
+  padding-bottom: var(--space-3xs);
+
+}
+
+.subsection__title {
+
+}
+
+.subsection__date {
+
+}
+
+.subsection__item {
+  padding: var(--space-xs) 0rem;
+
+}
+

@@ -176,7 +176,6 @@ a.menu:active::before
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   height: 3rem;
 }
 
@@ -195,17 +194,5 @@ a.menu:active::before
 .navigation_bar a:hover
 {
   color: red
-}
-
-@media (min-width: 34rem) {
-  :root {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 68rem) {
-  :root {
-    font-size: 40px;
-  }
 }
 
