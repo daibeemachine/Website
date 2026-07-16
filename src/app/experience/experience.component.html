@@ -6,15 +6,9 @@
       <div class="contact">
         <div class="contact__info">
           <fa-icon [icon]="phoneIcon"></fa-icon>
-        </div>
-        <div class="contact__info">
-          <fa-icon [icon]="envelopeIcon"></fa-icon>
-        </div>
-        <div class="contact__info">
-          <fa-icon [icon]="linkedinIcon"></fa-icon>
-        </div>
-        <div class="contact__info">
-          <fa-icon [icon]="githubIcon"></fa-icon>
+          <a><fa-icon [icon]="envelopeIcon"></fa-icon></a>
+          <a><fa-icon [icon]="linkedinIcon"></fa-icon></a>
+          <a><fa-icon [icon]="githubIcon"></fa-icon></a>
         </div>
       </div>
       @for(section of sections; track section.id) {
