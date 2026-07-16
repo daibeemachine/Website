@@ -1,24 +1,25 @@
 .CV {
   display: flex;
+
+}
+
+.CV__body {
+  display: flex;
+  width: 100%;
   justify-content: center;
 
 }
 
 .CV__bar {
   background-color: rgb(255, 255, 174);
-  height: 95vh;
-  max-height: 100%;
-  width: 10vw;
+  height: 100%;
+  width: var(--space-3xl);
 }
 
-.CV__body {
-  display: flex;
-  width: 95%;
-
+.body__sections {
+  margin: 0rem var(--space-2xl);
 }
-
 .body__title {
-  font-size: 4rem;
   text-align: center;
 
 }
@@ -36,15 +37,10 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-}
-
-.contact__info p {
-  font-size: 1rem;
 }
 
 .contact__info fa-icon {
-  font-size: 2rem;
+  font-size: var(--step-1);
 }
 
 .contact__divider {

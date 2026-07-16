@@ -1,26 +1,20 @@
 <div class="CV">
   <div class="CV__body">
+    <div class="CV__bar"></div>
     <div class="body__sections">
       <h1 class="body__title">Anton Olson</h1>
       <div class="contact">
         <div class="contact__info">
           <fa-icon [icon]="phoneIcon"></fa-icon>
-          <i>In PDF mode</i>
         </div>
-        <div class="contact__divider"></div>
         <div class="contact__info">
           <fa-icon [icon]="envelopeIcon"></fa-icon>
-          <p>daibeemachine@gmail.com</p>
         </div>
-        <div class="contact__divider"></div>
         <div class="contact__info">
           <fa-icon [icon]="linkedinIcon"></fa-icon>
-          <p>antonaolson</p>
         </div>
-        <div class="contact__divider"></div>
         <div class="contact__info">
           <fa-icon [icon]="githubIcon"></fa-icon>
-          <p>daibeemachine</p>
         </div>
       </div>
       @for(section of sections; track section.id) {
@@ -39,11 +33,8 @@
             }
       </div>
       }
-      <div class=""></div>
     </div>
 
-  </div>
-  <div class="contact">
   </div>
 </div>
 <div style="">
