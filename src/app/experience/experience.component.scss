@@ -40,8 +40,12 @@
 
 .contact__info fa-icon {
   font-size: var(--step-1);
-  cursor: pointer;
   margin: 0rem var(--space-m);
+  color: black;
+}
+
+.contact__info--phone {
+  cursor: not-allowed;
 }
 
 
