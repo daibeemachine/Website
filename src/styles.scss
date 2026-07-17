@@ -8,18 +8,6 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* @link https://utopia.fyi/type/calculator?c=360,8,1.414,3800,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-/* @link https://utopia.fyi/type/calculator?c=360,16,1.414,3800,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,3800,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,3800,20,1.5,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,2560,20,1.5,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,2560,20,1.667,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,2560,24,1.618,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,3840,26,1.618,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,1860,26,1.618,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @link https://utopia.fyi/type/calculator?c=300,16,1.414,1860,26,1.5,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
   --step--2: clamp(0.5002rem, 0.4574rem + 0.2278vw, 0.7222rem);
@@ -44,6 +32,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --space-xl: clamp(1.5rem, 1.2645rem + 1.0465vw, 3.75rem);
   --space-2xl: clamp(2rem, 1.686rem + 1.3953vw, 5rem);
   --space-3xl: clamp(3rem, 2.5291rem + 2.093vw, 7.5rem);
+
+
+:root {
+  --grid-max-width: 77.5;
+  --grid-gutter: var(--space-s-l, clamp(0.5rem, -0.3182rem + 3.6364vw, 2.5rem));
+  --grid-columns: 12;
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
 
   /* One-up pairs */
   --space-3xs-2xs: clamp(0.125rem, 0.0727rem + 0.2326vw, 0.625rem);

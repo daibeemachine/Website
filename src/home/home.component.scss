@@ -1,0 +1,49 @@
+.homepage {
+  max-width: 77.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  padding: 0rem var(--space-2xl);
+}
+
+.maintext {
+  display: flex;
+  flex-direction: column;
+}
+
+.maintext p {
+  margin: var(--space-m) 0rem;
+  text-align: center;
+}
+
+.maintext__hello {
+  font-size: var(--step-2);
+}
+
+.maintext__name {
+  font-size: var(--step-3);
+  font-weight: bold;
+}
+
+.maintext__welcome {
+  font-size: var(--step-1);
+  font-weight: normal;
+}
+
+.aboutme__text {
+  font-size: var(--step-0);
+}
+
+.beemachine {
+  width: 100%;
+  height: 100%;
+}
+
+.beemachine__button {
+  width: 20%;
+  height: auto;
+  background: transparent;
+  border: none !important;
+  align-self: center;
+  cursor: pointer;
+}
