@@ -1,7 +1,7 @@
 @if(mode == 0) {
-<button (click)="switchView()">Switch to PDF</button>
+<button (click)="switchView()" id="main" tabindex="0">Switch to PDF</button>
 <app-experience-html></app-experience-html>
 } @else {
-<button (click)="switchView()">Switch to HTML</button>
+<button (click)="switchView()" id="main" tabindex="0">Switch to HTML</button>
 <app-experience-pdf></app-experience-pdf>
 }
