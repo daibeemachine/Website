@@ -95,3 +95,18 @@ li {
 i {
   font-size: var(--step--1);
 }
+
+// Source - https://stackoverflow.com/a/58363499
+// Posted by Rahmat Ali
+// Retrieved 2026-07-16, License - CC BY-SA 4.0
+
+.ng2-pdf-viewer-container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
