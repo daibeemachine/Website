@@ -45,3 +45,21 @@
     height: auto;
     width: var(--bee_size);
   }
+
+.main__content {
+  position: absolute;
+  left: -100rem;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.main__content:focus {
+  left: 0rem;
+  top: auto;
+  position: fixed;
+  font-size: var(--step-0);
+  width: auto;
+  height: auto;
+}
