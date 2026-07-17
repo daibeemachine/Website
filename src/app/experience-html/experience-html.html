@@ -1,0 +1,33 @@
+<div class="CV">
+  <div class="CV__body">
+    <div class="CV__bar"></div>
+    <div class="body__sections">
+      <h1 class="body__title">Anton Olson</h1>
+      <div class="contact">
+        <div class="contact__info">
+          <fa-icon [icon]="phoneIcon" class="contact__info--phone"></fa-icon>
+          <a href="mailto:daibeemachine@gmail.com"><fa-icon [icon]="envelopeIcon"></fa-icon></a>
+          <a href="https://www.linkedin.com/in/antonaolson/"><fa-icon [icon]="linkedinIcon"></fa-icon></a>
+          <a href="https://github.com/daibeemachine"><fa-icon [icon]="githubIcon"></fa-icon></a>
+        </div>
+      </div>
+      @for(section of sections; track section.id) {
+      <div class="section">
+        <h2>{{section.title}}</h2>
+          @for(subsection of section.subsections; track subsection.id) {
+          <div class="subsection">
+            <h3>{{subsection.title}}</h3>
+            <h4>{{subsection.date}}</h4>
+            <ul >
+                @for(item of subsection.items; track item.id) {
+                <li class="subsection__item">{{item.info}}</li>
+                }
+            </ul>
+          </div>
+            }
+      </div>
+      }
+    </div>
+
+  </div>
+</div>

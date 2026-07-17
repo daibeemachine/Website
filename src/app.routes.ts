@@ -3,6 +3,7 @@ import {HomeComponent} from './home/home.component';
 import { BeesComponent } from './app/bees/bees.component';
 import { ExperienceComponent } from './app/experience/experience.component';
 import { PortfolioComponent } from './app/portfolio/portfolio.component';
+import { ExperiencePdf } from './app/experience-pdf/experience-pdf';
 
 
 export const routeConfig: Routes =
@@ -21,6 +22,11 @@ export const routeConfig: Routes =
     path: 'experience',
     component: ExperienceComponent,
     title: `Experience`
+  },
+  {
+    path: 'experience-pdf',
+    component: ExperiencePdf,
+    title: 'Experience'
   },
   {
     path: 'portfolio',

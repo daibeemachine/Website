@@ -1,28 +1,32 @@
-import { Component, inject} from '@angular/core';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import CV from '../../CV.json';
+import { Component} from '@angular/core';
+import { ExperienceHtml } from '../experience-html/experience-html';
+import { ExperiencePdf } from '../experience-pdf/experience-pdf';
+import { ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
-  imports: [PdfViewerModule, FontAwesomeModule],
+  imports: [ExperienceHtml, ExperiencePdf],
   templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+  styleUrl: './experience.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperienceComponent {
-  sections = CV.sections;
+  // Mode 0 is the HTML view, mode 1 is the PDF view
+  mode = 0;
+  switchView() {
+    this.mode = (this.mode+1) % 2;
+  }
 
-  envelopeIcon = faEnvelope;
-  githubIcon = faGithub;
-  linkedinIcon = faLinkedin;
-  phoneIcon = faPhone;
 
   constructor()
   {
     const icon = document.getElementById("siteicon");
     icon?.setAttribute("href", "images/ExperienceIcon.png");
   }
-  source = "https://raw.githubusercontent.com/daibeemachine/Resume/162ff3b7ae7f4c68216b55fcfe6d2404fe7c1f5a/main.pdf";
+  // Source - https://stackoverflow.com/a/58363499
+// Posted by Rahmat Ali
+// Retrieved 2026-07-16, License - CC BY-SA 4.0
+
+  // called after pdf page is rendered
+
 }
