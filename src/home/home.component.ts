@@ -12,4 +12,11 @@ export class HomeComponent
     const icon = document.getElementById("siteicon");
     icon?.setAttribute("href", "HomeIcon.png");
   }
+
+  public flipBee()
+  {
+    var bee = document.querySelector('.beemachine');
+    bee?.setAttribute('style', 'transform: rotateX(360deg); transition: transform 500ms');
+    setTimeout(() => { bee?.setAttribute('style', ''); }, 500);
+  }
 }

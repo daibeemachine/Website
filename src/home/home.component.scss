@@ -35,7 +35,15 @@
 }
 
 .beemachine {
-  width: min(20%, 15rem);
-  height: min(20%, 15rem);
+  width: 100%;
+  height: 100%;
+}
+
+.beemachine__button {
+  width: 20%;
+  height: auto;
+  background: transparent;
+  border: none !important;
   align-self: center;
+  cursor: pointer;
 }
