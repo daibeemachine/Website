@@ -5,10 +5,10 @@
       <h1 class="body__title">Anton Olson</h1>
       <div class="contact">
         <div class="contact__info">
-          <fa-icon [icon]="phoneIcon" class="contact__info--phone"></fa-icon>
-          <a href="mailto:daibeemachine@gmail.com"><fa-icon [icon]="envelopeIcon"></fa-icon></a>
-          <a href="https://www.linkedin.com/in/antonaolson/"><fa-icon [icon]="linkedinIcon"></fa-icon></a>
-          <a href="https://github.com/daibeemachine"><fa-icon [icon]="githubIcon"></fa-icon></a>
+          <fa-icon [icon]="phoneIcon" class="contact__info--phone" matTooltip="See PDF for phone number" tabindex="0"></fa-icon>
+          <a href="mailto:daibeemachine@gmail.com" matTooltip="daibeemachine@gmail.com"><fa-icon [icon]="envelopeIcon"></fa-icon></a>
+          <a href="https://www.linkedin.com/in/antonaolson/" matTooltip="antonaolson"><fa-icon [icon]="linkedinIcon"></fa-icon></a>
+          <a href="https://github.com/daibeemachine" matTooltip="daibeemachine"><fa-icon [icon]="githubIcon" ></fa-icon></a>
         </div>
       </div>
       @for(section of sections; track section.id) {
