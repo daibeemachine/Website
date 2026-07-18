@@ -3,8 +3,11 @@
       @for (card of cards; track card.id)
       {
           <div class="card" tabindex="-1">
-            <h1 class="card_title"><a href="{{card.link}}" id="main" tabIndex="0">{{card.title}}</a></h1>
-            <p class="card_description">{{card.description}}</p>
+            <div class="card__bar"></div>
+            <div class="card__content">
+              <h1 class="card_title"><a href="{{card.link}}" id="main" tabIndex="0">{{card.title}}</a></h1>
+              <p class="card_description">{{card.description}}</p>
+            </div>
           </div>
       }
       <div class="beemachine__container" tabindex="-1">

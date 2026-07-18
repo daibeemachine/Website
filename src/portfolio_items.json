@@ -9,13 +9,13 @@
     {
       "id": 2,
       "title": "GameJam2026",
-      "description": "A game me and a friend made with Pico8 for a Game Jam hosted at the University of Minnesota Morris. The theme of the contest was \"Construction/Destruction.\"",
+      "description": "A game a friend and I made with Pico8 for a Game Jam hosted at the University of Minnesota Morris. The theme of the contest was \"Construction/Destruction.\"",
       "link": "https://daibeemachine.github.io/GameJam2026/"
     },
     {
       "id": 3,
-      "title": "Resume",
-      "description": "Source code for my resume.",
+      "title": "CV (LaTeX)",
+      "description": "Source code for the PDF version of my CV.",
       "link": "https://github.com/daibeemachine/Resume"
     }
   ]
