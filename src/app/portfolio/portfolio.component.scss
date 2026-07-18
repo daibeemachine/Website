@@ -13,13 +13,22 @@
   box-sizing: border-box;
 }
 
-.daibee {
-  width: 30%;
-  height: auto;
-  padding: var(--space-3xl);
+.beemachine {
+  width: 80%;
+  height: 80%;
+}
+
+.beemachine__button {
+  height: 100%;
+  width: 100%;
+  border: none !important;
+  cursor: pointer;
+}
+
+.beemachine__container {
+  padding: 0rem;
   height: calc(2*var(--step-5));
   width: calc(2*var(--step-5));
-  box-sizing: border-box;
 }
 .portfolio {
   display: flex;
@@ -41,17 +50,34 @@
   flex-direction: column;
   background-color: lightgray;
   align-items: center;
-  padding: var(--space-m);
+  padding: var(--space-xl);
   height: calc(2*var(--step-5));
   width: calc(2*var(--step-5));
   overflow: auto;
+  color: rgba(0, 0, 0, .80);
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, .30);
+  border-radius: var(--space-xs);
 
 }
+.card a {
+  color: inherit;
+  text-decoration-line: underline;
+}
+
 .card_title {
   font-size: var(--step-0);
   text-align: center;
+  color: rgba(0, 0, 0, 1);
 }
+
+.card_title a:focus,
+.card_title a:hover {
+  color: red;
+}
+
 .card_description {
   font-size:var(--step--1);
+  color: rgba(0, 0, 0, .80);
 }
 

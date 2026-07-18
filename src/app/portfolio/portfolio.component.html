@@ -2,11 +2,13 @@
   <div class="card_grid">
       @for (card of cards; track card.id)
       {
-          <div class="card" id="main"tabIndex="0">
-            <h1 class="card_title"><a href="{{card.link}}">{{card.title}}</a></h1>
+          <div class="card" tabindex="-1">
+            <h1 class="card_title"><a href="{{card.link}}" id="main" tabIndex="0">{{card.title}}</a></h1>
             <p class="card_description">{{card.description}}</p>
           </div>
       }
-    <button (click)="spinBee()" style="background: transparent; border: none !important; cursor: pointer;"><img src="images/Bee.png" class="daibee" alt="A smiling cyborg bee"><img/></button>
+      <div class="beemachine__container" tabindex="-1">
+        <button (click)="spinBee()" class="beemachine__button"><img src="images/Bee.png" class="beemachine" alt="A smiling cyborg bee"><img/></button>
+      </div>
   </div>
 </div>

@@ -17,7 +17,7 @@ export class PortfolioComponent {
 
   public spinBee()
   {
-    var bee = document.querySelector('.daibee');
+    var bee = document.querySelector('.beemachine');
     bee?.setAttribute('style', 'transform: rotate(-360deg); transition: transform 500ms');
     setTimeout(() => { bee?.setAttribute('style', ''); }, 500);
   }
