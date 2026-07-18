@@ -5,6 +5,11 @@
   --hello_font_size: clamp(1rem, min(2vh, 2vw), 3rem);
   --kinshi_font_size: clamp(3rem, min(5vh, 5vw), 5rem);
 }
+
+a:focus,
+a:hover {
+  transition: color 250ms ease-in-out;
+}
 // Default Homepage SCSS Properties!!!
 
 .beespeech
