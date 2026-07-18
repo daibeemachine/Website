@@ -176,13 +176,14 @@ a.menu:active::before
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  height: auto;
+  max-width: 77.5rem;
+  margin: var(--space-m) auto;
 }
 
 .navigation_bar a {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1rem;
+  padding: 0rem var(--space-m);
+  font-size: var(--step-1);
   color: gray
 }
 
