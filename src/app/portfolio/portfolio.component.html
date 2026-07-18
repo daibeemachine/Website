@@ -1,12 +1,12 @@
-<div class="card_grid">
-    @for (card of cards; track card.id)
-    {
-        <div class="card" id="main"tabIndex="0">
-          <h1 class="card_title"><a href="{{card.link}}">{{card.title}}</a></h1>
-          <p class="card_description">{{card.description}}</p>
-        </div>
-    }
-</div>
-<div style="display: flex; align-items: center; justify-content: center;">
-  <button (click)="spinBee()" style="background: transparent; border: none !important; cursor: pointer;"><img src="images/Bee.png" class="daibee" alt="A smiling cyborg bee"><img/></button>
+<div class="portfolio">
+  <div class="card_grid">
+      @for (card of cards; track card.id)
+      {
+          <div class="card" id="main"tabIndex="0">
+            <h1 class="card_title"><a href="{{card.link}}">{{card.title}}</a></h1>
+            <p class="card_description">{{card.description}}</p>
+          </div>
+      }
+    <button (click)="spinBee()" style="background: transparent; border: none !important; cursor: pointer;"><img src="images/Bee.png" class="daibee" alt="A smiling cyborg bee"><img/></button>
+  </div>
 </div>
