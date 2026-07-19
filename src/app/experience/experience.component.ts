@@ -17,11 +17,4 @@ export class ExperienceComponent {
     this.mode = (this.mode+1) % 2;
   }
 
-
-  constructor()
-  {
-    const icon = document.getElementById("siteicon");
-    icon?.setAttribute("href", "images/ExperienceIcon.png");
-  }
-
 }
