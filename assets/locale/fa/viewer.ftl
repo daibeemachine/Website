@@ -1,0 +1,635 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Main toolbar buttons (tooltips and alt text for images)
+
+pdfjs-previous-button =
+    .title = صفحهٔ قبلی
+pdfjs-previous-button-label = قبلی
+pdfjs-next-button =
+    .title = صفحهٔ بعدی
+pdfjs-next-button-label = بعدی
+# .title: Tooltip for the pageNumber input.
+pdfjs-page-input =
+    .title = صفحه
+# Variables:
+#   $pagesCount (Number) - the total number of pages in the document
+# This string follows an input field with the number of the page currently displayed.
+pdfjs-of-pages = از { $pagesCount }
+# Variables:
+#   $pageNumber (Number) - the currently visible page
+#   $pagesCount (Number) - the total number of pages in the document
+pdfjs-page-of-pages = ({ $pageNumber }از { $pagesCount })
+pdfjs-zoom-out-button =
+    .title = کوچک‌نمایی
+pdfjs-zoom-out-button-label = کوچک‌نمایی
+pdfjs-zoom-in-button =
+    .title = بزرگ‌نمایی
+pdfjs-zoom-in-button-label = بزرگ‌نمایی
+pdfjs-zoom-select =
+    .title = زوم
+pdfjs-presentation-mode-button =
+    .title = تغییر به حالت ارائه
+pdfjs-presentation-mode-button-label = حالت ارائه
+pdfjs-open-file-button =
+    .title = باز کردن پرونده
+pdfjs-open-file-button-label = باز کردن
+pdfjs-print-button =
+    .title = چاپ
+pdfjs-print-button-label = چاپ
+pdfjs-save-button =
+    .title = ذخیره
+pdfjs-save-button-label = ذخیره
+# Used in Firefox for Android as a tooltip for the download button (“download” is a verb).
+pdfjs-download-button =
+    .title = دریافت
+# Used in Firefox for Android as a label for the download button (“download” is a verb).
+# Length of the translation matters since we are in a mobile context, with limited screen estate.
+pdfjs-download-button-label = دریافت
+pdfjs-bookmark-button =
+    .title = صفحه فعلی (مشاهده نشانی اینترنتی از صفحه فعلی)
+pdfjs-bookmark-button-label = صفحه فعلی
+
+##  Secondary toolbar and context menu
+
+pdfjs-tools-button =
+    .title = ابزارها
+pdfjs-tools-button-label = ابزارها
+pdfjs-first-page-button =
+    .title = برو به اولین صفحه
+pdfjs-first-page-button-label = برو به اولین صفحه
+pdfjs-last-page-button =
+    .title = برو به آخرین صفحه
+pdfjs-last-page-button-label = برو به آخرین صفحه
+pdfjs-page-rotate-cw-button =
+    .title = چرخش ساعتگرد
+pdfjs-page-rotate-cw-button-label = چرخش ساعتگرد
+pdfjs-page-rotate-ccw-button =
+    .title = چرخش پاد ساعتگرد
+pdfjs-page-rotate-ccw-button-label = چرخش پاد ساعتگرد
+pdfjs-cursor-text-select-tool-button =
+    .title = فعال کردن ابزارِ انتخابِ متن
+pdfjs-cursor-text-select-tool-button-label = ابزارِ انتخابِ متن
+pdfjs-cursor-hand-tool-button =
+    .title = فعال کردن ابزارِ دست
+pdfjs-cursor-hand-tool-button-label = ابزار دست
+pdfjs-scroll-page-button =
+    .title = استفاده از پیمایش صفحه
+pdfjs-scroll-page-button-label = پیمایش صفحه
+pdfjs-scroll-vertical-button =
+    .title = استفاده از پیمایش عمودی
+pdfjs-scroll-vertical-button-label = پیمایش عمودی
+pdfjs-scroll-horizontal-button =
+    .title = استفاده از پیمایش افقی
+pdfjs-scroll-horizontal-button-label = پیمایش افقی
+pdfjs-spread-none-button =
+    .title = صفحات پیوسته را یکی نکنید
+pdfjs-spread-none-button-label = بدون صفحات پیوسته
+
+## Document properties dialog
+
+pdfjs-document-properties-button =
+    .title = خصوصیات سند...
+pdfjs-document-properties-button-label = خصوصیات سند...
+pdfjs-document-properties-file-name = نام پرونده:
+pdfjs-document-properties-file-size = حجم پرونده:
+# Variables:
+#   $kb (Number) - the PDF file size in kilobytes
+#   $b (Number) - the PDF file size in bytes
+pdfjs-document-properties-size-kb = { NUMBER($kb, maximumSignificantDigits: 3) } کیلوبایت ({ $b } بایت)
+# Variables:
+#   $mb (Number) - the PDF file size in megabytes
+#   $b (Number) - the PDF file size in bytes
+pdfjs-document-properties-size-mb = { NUMBER($mb, maximumSignificantDigits: 3) } مگابایت ({ $b } بایت)
+pdfjs-document-properties-title = عنوان:
+pdfjs-document-properties-author = نویسنده:
+pdfjs-document-properties-subject = موضوع:
+pdfjs-document-properties-keywords = کلیدواژه‌ها:
+pdfjs-document-properties-creation-date = تاریخ ایجاد:
+pdfjs-document-properties-modification-date = تاریخ ویرایش:
+# Variables:
+#   $dateObj (Date) - the creation/modification date and time of the PDF file
+pdfjs-document-properties-date-time-string = { DATETIME($dateObj, dateStyle: "short", timeStyle: "medium") }
+pdfjs-document-properties-creator = ایجاد کننده:
+pdfjs-document-properties-producer = ایجاد کننده PDF:
+pdfjs-document-properties-version = نسخه PDF:
+pdfjs-document-properties-page-count = تعداد صفحات:
+pdfjs-document-properties-page-size = اندازه صفحه:
+pdfjs-document-properties-page-size-unit-inches = اینچ
+pdfjs-document-properties-page-size-unit-millimeters = میلی‌متر
+pdfjs-document-properties-page-size-name-a-three = A3
+pdfjs-document-properties-page-size-name-a-four = A4
+pdfjs-document-properties-page-size-name-letter = نامه
+pdfjs-document-properties-page-size-name-legal = حقوقی
+
+## Variables:
+##   $width (Number) - the width of the (current) page
+##   $height (Number) - the height of the (current) page
+##   $unit (String) - the unit of measurement of the (current) page
+##   $name (String) - the name of the (current) page
+##   $orientation (String) - the orientation of the (current) page
+
+pdfjs-document-properties-page-size-dimension-string = { $width } × { $height } { $unit } ({ $orientation })
+pdfjs-document-properties-page-size-dimension-name-string = { $width } × { $height } { $unit } ({ $name }, { $orientation })
+
+##
+
+pdfjs-document-properties-linearized-yes = بله
+pdfjs-document-properties-linearized-no = خیر
+pdfjs-document-properties-close-button = بستن
+
+## Print
+
+pdfjs-print-progress-message = آماده سازی مدارک برای چاپ کردن…
+# Variables:
+#   $progress (Number) - percent value
+pdfjs-print-progress-percent = { $progress }%
+pdfjs-print-progress-close-button = لغو
+pdfjs-printing-not-supported = هشدار: قابلیت چاپ به‌طور کامل در این مرورگر پشتیبانی نمی‌شود.
+pdfjs-printing-not-ready = اخطار: پرونده PDF بطور کامل بارگیری نشده و امکان چاپ وجود ندارد.
+
+## Tooltips and alt text for side panel toolbar buttons
+
+pdfjs-toggle-sidebar-button =
+    .title = باز و بسته کردن نوار کناری
+pdfjs-toggle-sidebar-button-label = تغییرحالت نوارکناری
+pdfjs-document-outline-button =
+    .title = نمایش رئوس مطالب مدارک(برای بازشدن/جمع شدن همه موارد دوبار کلیک کنید)
+pdfjs-document-outline-button-label = طرح نوشتار
+pdfjs-attachments-button =
+    .title = نمایش پیوست‌ها
+pdfjs-attachments-button-label = پیوست‌ها
+pdfjs-layers-button-label = لایه‌ها
+pdfjs-thumbs-button =
+    .title = نمایش تصاویر بندانگشتی
+pdfjs-thumbs-button-label = تصاویر بندانگشتی
+pdfjs-findbar-button =
+    .title = جستجو در سند
+pdfjs-findbar-button-label = پیدا کردن
+
+## Thumbnails panel item (tooltip and alt text for images)
+
+# Variables:
+#   $page (Number) - the page number
+pdfjs-thumb-page-title =
+    .title = صفحه { $page }
+# Variables:
+#   $page (Number) - the page number
+pdfjs-thumb-page-canvas =
+    .aria-label = تصویر بند‌ انگشتی صفحه { $page }
+
+## Find panel button title and messages
+
+pdfjs-find-input =
+    .title = پیدا کردن
+    .placeholder = پیدا کردن در سند…
+pdfjs-find-previous-button =
+    .title = پیدا کردن رخداد قبلی عبارت
+pdfjs-find-previous-button-label = قبلی
+pdfjs-find-next-button =
+    .title = پیدا کردن رخداد بعدی عبارت
+pdfjs-find-next-button-label = بعدی
+pdfjs-find-highlight-checkbox = برجسته و هایلایت کردن همه موارد
+pdfjs-find-match-case-checkbox-label = تطبیق کوچکی و بزرگی حروف
+pdfjs-find-entire-word-checkbox-label = تمام کلمه‌ها
+pdfjs-find-reached-top = به بالای صفحه رسیدیم، از پایین ادامه می‌دهیم
+pdfjs-find-reached-bottom = به آخر صفحه رسیدیم، از بالا ادامه می‌دهیم
+pdfjs-find-not-found = عبارت پیدا نشد
+
+## Predefined zoom values
+
+pdfjs-page-scale-width = عرض صفحه
+pdfjs-page-scale-fit = اندازه کردن صفحه
+pdfjs-page-scale-auto = بزرگنمایی خودکار
+pdfjs-page-scale-actual = اندازه واقعی‌
+# Variables:
+#   $scale (Number) - percent value for page scale
+pdfjs-page-scale-percent = { $scale }%
+
+## PDF page
+
+# Variables:
+#   $page (Number) - the page number
+pdfjs-page-landmark =
+    .aria-label = صفحهٔ { $page }
+
+## Loading indicator messages
+
+pdfjs-loading-error = هنگام بارگیری پرونده PDF خطایی رخ داد.
+pdfjs-invalid-file-error = پرونده PDF نامعتبر یامعیوب می‌باشد.
+pdfjs-missing-file-error = پرونده PDF یافت نشد.
+pdfjs-unexpected-response-error = پاسخ پیش بینی نشده سرور
+pdfjs-rendering-error = هنگام بارگیری صفحه خطایی رخ داد.
+
+## Annotations
+
+# .alt: This is used as a tooltip.
+# Variables:
+#   $type (String) - an annotation type from a list defined in the PDF spec
+# (32000-1:2008 Table 169 – Annotation types).
+# Some common types are e.g.: "Check", "Text", "Comment", "Note"
+pdfjs-text-annotation-type =
+    .alt = [{ $type } Annotation]
+# Variables:
+#   $dateObj (Date) - the modification date and time of the annotation
+pdfjs-annotation-date-time-string = { DATETIME($dateObj, dateStyle: "short", timeStyle: "medium") }
+
+## Password
+
+pdfjs-password-label = جهت باز کردن پرونده PDF گذرواژه را وارد نمائید.
+pdfjs-password-invalid = گذرواژه نامعتبر. لطفا مجددا تلاش کنید.
+pdfjs-password-ok-button = تأیید
+pdfjs-password-cancel-button = لغو
+pdfjs-web-fonts-disabled = فونت های تحت وب غیر فعال شده اند: امکان استفاده از نمایش دهنده داخلی PDF وجود ندارد.
+
+## Editing
+
+pdfjs-editor-free-text-button =
+    .title = متن
+pdfjs-editor-free-text-button-label = متن
+pdfjs-editor-ink-button =
+    .title = کشیدن
+pdfjs-editor-ink-button-label = کشیدن
+pdfjs-editor-stamp-button =
+    .title = افزودن یا ویرایش تصاویر
+pdfjs-editor-stamp-button-label = افزودن یا ویرایش تصاویر
+pdfjs-editor-highlight-button =
+    .title = برجسته کردن
+pdfjs-editor-highlight-button-label = برجسته کردن
+pdfjs-highlight-floating-button1 =
+    .title = برجسته کردن
+    .aria-label = برجسته کردن
+pdfjs-highlight-floating-button-label = برجسته کردن
+
+##
+
+# Editor Parameters
+pdfjs-editor-free-text-color-input = رنگ
+pdfjs-editor-free-text-size-input = اندازه
+pdfjs-editor-ink-color-input = رنگ
+pdfjs-editor-stamp-add-image-button =
+    .title = افزودن تصویر
+pdfjs-editor-stamp-add-image-button-label = افزودن تصویر
+# .default-content is used as a placeholder in an empty text editor.
+pdfjs-free-text2 =
+    .aria-label = ویرایشگر متن
+    .default-content = شروع به نوشتن کنید…
+
+## Alt-text dialog
+
+pdfjs-editor-alt-text-add-description-label = افزودن توضیحات
+pdfjs-editor-alt-text-cancel-button = انصراف
+pdfjs-editor-alt-text-save-button = ذخیره
+
+## Color picker
+
+pdfjs-editor-colorpicker-button =
+    .title = تغییر رنگ
+pdfjs-editor-colorpicker-dropdown =
+    .aria-label = انتخاب رنگ
+pdfjs-editor-colorpicker-yellow =
+    .title = زرد
+pdfjs-editor-colorpicker-green =
+    .title = سبز
+pdfjs-editor-colorpicker-blue =
+    .title = آبی
+pdfjs-editor-colorpicker-pink =
+    .title = صورتی
+pdfjs-editor-colorpicker-red =
+    .title = قرمز
+
+## Show all highlights
+## This is a toggle button to show/hide all the highlights.
+
+pdfjs-editor-highlight-show-all-button-label = نمایش همه
+pdfjs-editor-highlight-show-all-button =
+    .title = نمایش همه
+
+## New alt-text dialog
+## Group note for entire feature: Alternative text (alt text) helps when people can't see the image. This feature includes a tool to create alt text automatically using an AI model that works locally on the user's device to preserve privacy.
+
+pdfjs-editor-new-alt-text-disclaimer-learn-more-url = بیشتر بدانید
+pdfjs-editor-new-alt-text-not-now-button = اکنون نه
+pdfjs-editor-new-alt-text-error-close-button = بستن
+
+## Image alt-text settings
+
+pdfjs-editor-alt-text-settings-delete-model-button = حذف
+pdfjs-editor-alt-text-settings-download-model-button = دریافت
+pdfjs-editor-alt-text-settings-downloading-model-button = در حال دریافت…
+pdfjs-editor-alt-text-settings-close-button = بستن
+
+# Translations for ngx-extended-pdf-viewer additions only available in en-US
+pdfjs-scroll-wrapped-button =
+    .title = Use Wrapped Scrolling
+pdfjs-scroll-wrapped-button-label = Wrapped Scrolling
+pdfjs-spread-odd-button =
+    .title = Join page spreads starting with odd-numbered pages
+pdfjs-spread-odd-button-label = Odd Spreads
+pdfjs-spread-even-button =
+    .title = Join page spreads starting with even-numbered pages
+pdfjs-spread-even-button-label = Even Spreads
+pdfjs-document-properties-page-size-orientation-portrait = portrait
+pdfjs-document-properties-page-size-orientation-landscape = landscape
+pdfjs-current-outline-item-button =
+    .title = Find Current Outline Item
+pdfjs-current-outline-item-button-label = Current Outline Item
+pdfjs-additional-layers = Additional Layers
+pdfjs-thumb-page-title1 =
+    .title = Page { $page } of { $total }
+pdfjs-thumb-page-checkbox1 =
+    .title = Select page { $page }
+pdfjs-find-match-diacritics-checkbox-label = Match Diacritics
+pdfjs-find-match-count =
+    { $total ->
+        [one] { $current } of { $total } match
+       *[other] { $current } of { $total } matches
+    }
+pdfjs-find-match-count-limit =
+    { $limit ->
+        [one] More than { $limit } match
+       *[other] More than { $limit } matches
+    }
+pdfjs-editor-color-picker-free-text-input =
+    .title = Change text color
+pdfjs-editor-color-picker-ink-input =
+    .title = Change drawing color
+pdfjs-comment-floating-button =
+    .title = Comment
+    .aria-label = Comment
+pdfjs-comment-floating-button-label = Comment
+pdfjs-editor-comment-button =
+    .title = Comment
+    .aria-label = Comment
+pdfjs-editor-comment-button-label = Comment
+pdfjs-editor-signature-button =
+    .title = Add signature
+pdfjs-editor-signature-button-label = Add signature
+pdfjs-editor-highlight-editor =
+    .aria-label = Highlight editor
+pdfjs-editor-ink-editor =
+    .aria-label = Drawing editor
+pdfjs-editor-signature-editor1 =
+    .aria-description = Signature editor: { $description }
+pdfjs-editor-stamp-editor =
+    .aria-label = Image editor
+pdfjs-editor-remove-ink-button =
+    .title = Remove drawing
+pdfjs-editor-remove-freetext-button =
+    .title = Remove text
+pdfjs-editor-remove-stamp-button =
+    .title = Remove image
+pdfjs-editor-remove-highlight-button =
+    .title = Remove highlight
+pdfjs-editor-remove-signature-button =
+    .title = Remove signature
+pdfjs-editor-ink-thickness-input = Thickness
+pdfjs-editor-ink-opacity-input = Opacity
+pdfjs-editor-free-highlight-thickness-input = Thickness
+pdfjs-editor-free-highlight-thickness-title =
+    .title = Change thickness when highlighting items other than text
+pdfjs-editor-add-signature-container =
+    .aria-label = Signature controls and saved signatures
+pdfjs-editor-signature-add-signature-button =
+    .title = Add new signature
+pdfjs-editor-signature-add-signature-button-label = Add new signature
+pdfjs-editor-add-saved-signature-button =
+    .title = Saved signature: { $description }
+pdfjs-editor-comments-sidebar-title =
+    { $count ->
+        [one] Comment
+       *[other] Comments
+    }
+pdfjs-editor-comments-sidebar-close-button =
+    .title = Close the sidebar
+    .aria-label = Close the sidebar
+pdfjs-editor-comments-sidebar-close-button-label = Close the sidebar
+pdfjs-editor-comments-sidebar-no-comments1 = See something noteworthy? Highlight it and leave a comment.
+pdfjs-editor-comments-sidebar-no-comments-link = Learn more
+pdfjs-editor-alt-text-button =
+    .aria-label = Alt text
+pdfjs-editor-alt-text-button-label = Alt text
+pdfjs-editor-alt-text-edit-button =
+    .aria-label = Edit alt text
+pdfjs-editor-alt-text-dialog-label = Choose an option
+pdfjs-editor-alt-text-dialog-description = Alt text (alternative text) helps when people can’t see the image or when it doesn’t load.
+pdfjs-editor-alt-text-add-description-description = Aim for 1-2 sentences that describe the subject, setting, or actions.
+pdfjs-editor-alt-text-mark-decorative-label = Mark as decorative
+pdfjs-editor-alt-text-mark-decorative-description = This is used for ornamental images, like borders or watermarks.
+pdfjs-editor-alt-text-decorative-tooltip = Marked as decorative
+pdfjs-editor-alt-text-textarea =
+    .placeholder = For example, “A young man sits down at a table to eat a meal”
+pdfjs-editor-resizer-top-left =
+    .aria-label = Top left corner — resize
+pdfjs-editor-resizer-top-middle =
+    .aria-label = Top middle — resize
+pdfjs-editor-resizer-top-right =
+    .aria-label = Top right corner — resize
+pdfjs-editor-resizer-middle-right =
+    .aria-label = Middle right — resize
+pdfjs-editor-resizer-bottom-right =
+    .aria-label = Bottom right corner — resize
+pdfjs-editor-resizer-bottom-middle =
+    .aria-label = Bottom middle — resize
+pdfjs-editor-resizer-bottom-left =
+    .aria-label = Bottom left corner — resize
+pdfjs-editor-resizer-middle-left =
+    .aria-label = Middle left — resize
+pdfjs-editor-highlight-colorpicker-label = Highlight color
+pdfjs-editor-new-alt-text-dialog-edit-label = Edit alt text (image description)
+pdfjs-editor-new-alt-text-dialog-add-label = Add alt text (image description)
+pdfjs-editor-new-alt-text-textarea =
+    .placeholder = Write your description here…
+pdfjs-editor-new-alt-text-description = Short description for people who can’t see the image or when the image doesn’t load.
+pdfjs-editor-new-alt-text-disclaimer1 = This alt text was created automatically and may be inaccurate.
+pdfjs-editor-new-alt-text-create-automatically-button-label = Create alt text automatically
+pdfjs-editor-new-alt-text-error-title = Couldn’t create alt text automatically
+pdfjs-editor-new-alt-text-error-description = Please write your own alt text or try again later.
+pdfjs-editor-new-alt-text-ai-model-downloading-progress = Downloading alt text AI model ({ $downloadedSize } of { $totalSize } MB)
+    .aria-valuetext = Downloading alt text AI model ({ $downloadedSize } of { $totalSize } MB)
+pdfjs-editor-new-alt-text-added-button =
+    .aria-label = Alt text added
+pdfjs-editor-new-alt-text-added-button-label = Alt text added
+pdfjs-editor-new-alt-text-missing-button =
+    .aria-label = Missing alt text
+pdfjs-editor-new-alt-text-missing-button-label = Missing alt text
+pdfjs-editor-new-alt-text-to-review-button =
+    .aria-label = Review alt text
+pdfjs-editor-new-alt-text-to-review-button-label = Review alt text
+pdfjs-editor-new-alt-text-generated-alt-text-with-disclaimer = Created automatically: { $generatedAltText }
+pdfjs-image-alt-text-settings-button =
+    .title = Image alt text settings
+pdfjs-image-alt-text-settings-button-label = Image alt text settings
+pdfjs-editor-alt-text-settings-dialog-label = Image alt text settings
+pdfjs-editor-alt-text-settings-automatic-title = Automatic alt text
+pdfjs-editor-alt-text-settings-create-model-button-label = Create alt text automatically
+pdfjs-editor-alt-text-settings-create-model-description = Suggests descriptions to help people who can’t see the image or when the image doesn’t load.
+pdfjs-editor-alt-text-settings-editor-title = Alt text editor
+pdfjs-editor-alt-text-settings-show-dialog-button-label = Show alt text editor right away when adding an image
+pdfjs-editor-alt-text-settings-show-dialog-description = Helps you make sure all your images have alt text.
+pdfjs-editor-highlight-added-alert = Highlight added
+pdfjs-editor-freetext-added-alert = Text added
+pdfjs-editor-ink-added-alert = Drawing added
+pdfjs-editor-stamp-added-alert = Image added
+pdfjs-editor-signature-added-alert = Signature added
+pdfjs-editor-undo-bar-message-highlight = Highlight removed
+pdfjs-editor-undo-bar-message-freetext = Text removed
+pdfjs-editor-undo-bar-message-ink = Drawing removed
+pdfjs-editor-undo-bar-message-stamp = Image removed
+pdfjs-editor-undo-bar-message-signature = Signature removed
+pdfjs-editor-undo-bar-message-comment = Comment removed
+pdfjs-editor-undo-bar-message-multiple =
+    { $count ->
+        [one] { $count } annotation removed
+       *[other] { $count } annotations removed
+    }
+pdfjs-editor-undo-bar-undo-button =
+    .title = Undo
+pdfjs-editor-undo-bar-undo-button-label = Undo
+pdfjs-editor-undo-bar-close-button =
+    .title = Close
+pdfjs-editor-undo-bar-close-button-label = Close
+pdfjs-editor-add-signature-dialog-label = This modal allows the user to create a signature to add to a PDF document. The user can edit the name (which also serves as the alt text), and optionally save the signature for repeated use.
+pdfjs-editor-add-signature-dialog-title = Add a signature
+pdfjs-editor-add-signature-type-button = Type
+    .title = Type
+pdfjs-editor-add-signature-draw-button = Draw
+    .title = Draw
+pdfjs-editor-add-signature-image-button = Image
+    .title = Image
+pdfjs-editor-add-signature-type-input =
+    .aria-label = Type your signature
+    .placeholder = Type your signature
+pdfjs-editor-add-signature-draw-placeholder = Draw your signature
+pdfjs-editor-add-signature-draw-thickness-range-label = Thickness
+pdfjs-editor-add-signature-draw-thickness-range =
+    .title = Drawing thickness: { $thickness }
+pdfjs-editor-add-signature-image-placeholder = Drag a file here to upload
+pdfjs-editor-add-signature-image-browse-link =
+    { PLATFORM() ->
+        [macos] Or choose image files
+       *[other] Or browse image files
+    }
+pdfjs-editor-add-signature-description-label = Description (alt text)
+pdfjs-editor-add-signature-description-input =
+    .title = Description (alt text)
+pdfjs-editor-add-signature-description-default-when-drawing = Signature
+pdfjs-editor-add-signature-clear-button-label = Clear signature
+pdfjs-editor-add-signature-clear-button =
+    .title = Clear signature
+pdfjs-editor-add-signature-save-checkbox = Save signature
+pdfjs-editor-add-signature-save-warning-message = You’ve reached the limit of 5 saved signatures. Remove one to save more.
+pdfjs-editor-add-signature-image-upload-error-title = Couldn’t upload image
+pdfjs-editor-add-signature-image-upload-error-description = Check your network connection or try another image.
+pdfjs-editor-add-signature-image-no-data-error-title = Can’t convert this image into a signature
+pdfjs-editor-add-signature-image-no-data-error-description = Please try uploading a different image.
+pdfjs-editor-add-signature-error-close-button = Close
+pdfjs-editor-add-signature-cancel-button = Cancel
+pdfjs-editor-add-signature-add-button = Add
+pdfjs-editor-delete-signature-button1 =
+    .title = Remove saved signature
+pdfjs-editor-delete-signature-button-label1 = Remove saved signature
+pdfjs-editor-add-signature-edit-button-label = Edit description
+pdfjs-editor-edit-signature-dialog-title = Edit description
+pdfjs-editor-edit-signature-update-button = Update
+pdfjs-show-comment-button =
+    .title = Show comment
+pdfjs-editor-edit-comment-popup-button-label = Edit comment
+pdfjs-editor-edit-comment-popup-button =
+    .title = Edit comment
+pdfjs-editor-delete-comment-popup-button-label = Remove comment
+pdfjs-editor-delete-comment-popup-button =
+    .title = Remove comment
+pdfjs-editor-edit-comment-dialog-title-when-editing = Edit comment
+pdfjs-editor-edit-comment-dialog-save-button-when-editing = Update
+pdfjs-editor-edit-comment-dialog-title-when-adding = Add comment
+pdfjs-editor-edit-comment-dialog-save-button-when-adding = Add
+pdfjs-editor-edit-comment-dialog-text-input =
+    .placeholder = Start typing…
+pdfjs-editor-edit-comment-dialog-cancel-button = Cancel
+pdfjs-editor-add-comment-button =
+    .title = Add comment
+pdfjs-toggle-views-manager-button1 =
+    .title = Manage pages
+pdfjs-toggle-views-manager-notification-button =
+    .title = Toggle Sidebar (document contains thumbnails/outline/attachments/layers)
+pdfjs-toggle-views-manager-button1-label = Manage pages
+pdfjs-views-manager-sidebar =
+    .aria-label = Sidebar
+pdfjs-views-manager-sidebar-resizer =
+    .aria-label = Sidebar resizer
+pdfjs-views-manager-view-selector-button =
+    .title = Views
+pdfjs-views-manager-view-selector-button-label = Views
+pdfjs-views-manager-pages-title = Pages
+pdfjs-views-manager-outlines-title1 = Document outline
+    .title = Document outline (double-click to expand/collapse all items)
+pdfjs-views-manager-attachments-title = Attachments
+pdfjs-views-manager-layers-title1 = Layers
+    .title = Layers (double-click to reset all layers to the default state)
+pdfjs-views-manager-pages-option-label = Pages
+pdfjs-views-manager-outlines-option-label = Document outline
+pdfjs-views-manager-attachments-option-label = Attachments
+pdfjs-views-manager-layers-option-label = Layers
+pdfjs-views-manager-add-file-button =
+    .title = Add file
+pdfjs-views-manager-add-file-button-label = Add file
+pdfjs-views-manager-pages-status-action-label =
+    { $count ->
+        [one] { $count } selected
+        *[other] { $count } selected
+    }
+pdfjs-views-manager-pages-status-none-action-label = Select pages
+pdfjs-views-manager-pages-status-action-button-label = Manage
+pdfjs-views-manager-pages-status-copy-button-label = Copy
+pdfjs-views-manager-pages-status-cut-button-label = Cut
+pdfjs-views-manager-pages-status-delete-button-label = Delete
+pdfjs-views-manager-pages-status-export-selected-button-label = Export selected…
+pdfjs-views-manager-status-undo-cut-label =
+    { $count ->
+        [one] 1 page cut
+        *[other] { $count } pages cut
+    }
+pdfjs-views-manager-pages-status-undo-copy-label =
+    { $count ->
+        [one] 1 page copied
+        *[other] { $count } pages copied
+    }
+pdfjs-views-manager-pages-status-undo-delete-label =
+    { $count ->
+        [one] 1 page deleted
+        *[other] { $count } pages deleted
+    }
+pdfjs-views-manager-pages-status-waiting-ready-label = Getting your file ready…
+pdfjs-views-manager-pages-status-waiting-uploading-label = Uploading file…
+pdfjs-views-manager-status-warning-cut-label = Couldn’t cut. Refresh page and try again.
+pdfjs-views-manager-status-warning-copy-label = Couldn’t copy. Refresh page and try again.
+pdfjs-views-manager-status-warning-delete-label = Couldn’t delete. Refresh page and try again.
+pdfjs-views-manager-status-warning-save-label = Couldn’t save. Refresh page and try again.
+pdfjs-views-manager-status-undo-button-label = Undo
+pdfjs-views-manager-status-done-button-label = Done
+pdfjs-views-manager-status-close-button =
+    .title = Close
+pdfjs-views-manager-status-close-button-label = Close
+pdfjs-views-manager-paste-button-label = Paste
+pdfjs-views-manager-paste-button-before =
+    .title = Paste before the first page
+pdfjs-views-manager-paste-button-after =
+    .title = Paste after page { $page }
+pdfjs-new-badge-content = NEW
+pdfjs-views-manager-waiting-for-file = Uploading file…
+unverified-signature-warning = This PDF file contains a digital signature. The PDF viewer can't verify if the signature is valid. Please download the file and open it in Acrobat Reader to verify the signature is valid.
+pdfjs-infinite-scroll-button-label = Infinite scroll
+pdfjs-find-multiple-checkbox-label = Match Each Word
+pdfjs-find-regexp-checkbox-label = Regular Expression
+pdfjs-editor-movePageUp-button =
+    .title = Move Page Up
+pdfjs-editor-movePageUp-button-label = Move Page Up
+pdfjs-editor-movePageDown-button =
+    .title = Move Page Down
+pdfjs-editor-movePageDown-button-label = Move Page Down
+pdfjs-cursor-page-flip-tool-button =
+    .title = Page Flip
+pdfjs-cursor-page-flip-tool-button-label = Page Flip
