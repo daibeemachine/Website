@@ -1,3 +1,3 @@
 # Website
 
-This is the source code for my website! I'm still working on building it, so a lot of things are going to change (hopefully)
+This is the source code for my website! I might add a few things later on, but this is the current version of it. 
