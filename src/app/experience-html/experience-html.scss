@@ -71,17 +71,30 @@ color:gray;
 
 }
 
-.subsection__title {
-
-}
-
-.subsection__date {
-
-}
-
 .subsection__item {
   padding: var(--space-s) 0rem;
-
 }
 
+.beemachine {
+  width: 80%;
+  height: 80%;
+}
 
+.beemachine__button {
+  height: calc(2*var(--step-4));
+  width: calc(2*var(--step-4));
+  border: none !important;
+  cursor: pointer;
+}
+
+.beemachine__container {
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  margin: 0rem auto;
+  justify-content: center;
+  max-width: 77.5rem;
+}

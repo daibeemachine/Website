@@ -1,9 +1,9 @@
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import { BeesComponent } from './app/bees/bees.component';
 import { ExperienceComponent } from './app/experience/experience.component';
 import { PortfolioComponent } from './app/portfolio/portfolio.component';
-import { ExperiencePdf } from './app/experience-pdf/experience-pdf';
+import { NgModule } from '@angular/core';
 
 
 export const routeConfig: Routes =
@@ -14,23 +14,20 @@ export const routeConfig: Routes =
     title: 'Home'
   },
   {
-    path: 'bees',
-    component: BeesComponent,
-    title: 'secret bee page!'
-  },
-  {
     path: 'experience',
     component: ExperienceComponent,
     title: `Experience`
   },
   {
-    path: 'experience-pdf',
-    component: ExperiencePdf,
-    title: 'Experience'
-  },
-  {
     path: 'portfolio',
     component: PortfolioComponent,
     title: 'Portfolio'
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: BeesComponent,
+    title: '404'
   }
 ];
+

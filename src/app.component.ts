@@ -1,9 +1,9 @@
-import { Component, inject, ViewChild } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { PortalModule } from '@angular/cdk/portal';
 import { NavigationBarComponent } from './app/navigation-bar/navigation-bar.component';
-import { Router, RouterLink} from '@angular/router';
+import { RouterLink } from '@angular/router';
 @Component({
   standalone: true,
   selector: 'app-root',
@@ -14,9 +14,6 @@ import { Router, RouterLink} from '@angular/router';
 })
 export class AppComponent {
   title = 'Website';
-  private route = inject(ActivatedRoute);
-  private router = inject(Router);
-  private routerLink = inject(RouterLink);
 
   public maincontent() {
     document.getElementById("main")?.focus();

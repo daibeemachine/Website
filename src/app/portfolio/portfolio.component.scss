@@ -13,38 +13,78 @@
   box-sizing: border-box;
 }
 
-.daibee {
-  width: 7rem;
-  height: 7rem;
-  padding: 2rem;
+.beemachine {
+  width: 80%;
+  height: 80%;
+}
+
+.beemachine__button {
+  height: 100%;
+  width: 100%;
+  border: none !important;
+  cursor: pointer;
+}
+
+.beemachine__container {
+  padding: 0rem;
+  height: calc(2*var(--step-5));
+  width: calc(2*var(--step-5));
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
 }
 
 .card_grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  gap: var(--space-m);
   max-width: 77.5rem;
   margin: 0rem var(--space-xl);
 }
 
 .card {
-  border: 2px solid black;
   display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-  align-items: center;
-  padding: var(--space-m);
+  flex-direction: row;
+  background-color: transparent;
   height: calc(2*var(--step-5));
   width: calc(2*var(--step-5));
   overflow: auto;
-
+  border-radius: var(--space-xs);
+  box-shadow: 0rem 0rem var(--space-m) rgba(0, 0, 0, 0.1);
 }
+.card a {
+  color: inherit;
+  text-decoration-line: underline;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  align-items: center;
+  width: 95%;
+}
+
 .card_title {
   font-size: var(--step-0);
   text-align: center;
-}
-.card_description {
-  font-size:var(--step--1);
+  color: rgba(0, 0, 0, 1);
 }
 
+.card_title a:focus,
+.card_title a:hover {
+  color: red;
+}
+
+.card_description {
+  font-size:var(--step--1);
+  color: rgba(0, 0, 0, .80);
+}
+
+.card__bar {
+  background-color: rgb(255, 255, 174);
+  height: 100%;
+  width: 5%;
+}

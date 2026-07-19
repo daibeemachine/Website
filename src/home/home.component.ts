@@ -7,11 +7,6 @@ import { Component} from '@angular/core';
 })
 export class HomeComponent
 {
-  constructor()
-  {
-    const icon = document.getElementById("siteicon");
-    icon?.setAttribute("href", "HomeIcon.png");
-  }
 
   public flipBee()
   {
